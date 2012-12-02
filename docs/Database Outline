@@ -1,0 +1,117 @@
+Author: Freddy Hidalgo-Monchez
+*********************************************
+
+
+Tables
+--------
+
+-----------
+ challenge
+-----------
+
+	* id
+	* name
+	* challenger_id
+	* challenge_category_id
+	* player_stop_time
+	* server_stop_time
+	* server_timezone
+	* status  --> (active, pending, completed)
+	* winner_id
+	* loser_id
+	* total_cheers
+
+-----------
+ cheer
+ ----------
+
+ 	*id
+ 	*friend_id
+ 	
+
+-----------
+ media
+-----------
+
+	* id
+	* challenge_id
+	* type -> (challenge, notice)
+	* media_category_id
+	* source
+
+----------------
+media_category
+----------------
+
+	* id
+	* format  -> (picture, video) 
+
+----------
+user
+----------
+
+	* id
+	* fb_id
+	* name
+	* small_pic
+	* large_pic
+	* wins
+	* losses
+	* total_challenges
+
+
+---------------
+user_challenge  --> associative table
+---------------
+	
+	* id
+	* user_id
+	* visitor_category_id
+	* challenge_id
+	* cheer_id
+	* state -> (for challenger:[created challenge, sent request], 
+											  challengee:[accepted challenge], visitor:[cheered, 
+											  commented])
+	* has_cheered
+
+
+--------------------
+visitor_category
+--------------------
+	
+	* id
+	* type -> (visitor, challenger, challengee)
+
+-------------
+friend_list
+-------------
+
+	* id
+	* friends -> (string list of friends we'll use to populate the invite/select friend windows)
+
+
+--------------------
+challenge_category
+--------------------
+	
+	* id
+	* type 
+
+
+
+Relationships
+-------------
+
+- user has one more challenge - challenge belongs to many user
+
+- user has one user_challenge - user_challenge has one user   
+- challenge has one user_challenge - user_challenge has one challenge
+
+- user_challenge has one user_cateogry - user_category has many user_challenge
+
+- challenge has many cheer - cheer belongs to one challenge
+- user_challenge has one or many cheer - cheer belongs to one user_challenge
+
+- challenge has one or more media - media has one challenge
+
+- challenge has one challenge_category - category belongs to many challenge_category

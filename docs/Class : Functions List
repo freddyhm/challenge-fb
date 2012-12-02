@@ -1,0 +1,125 @@
+
+***************************************
+
+Classes
+-------
+
+*Visitor
+*Player
+*Challenge
+*Notice
+
+*SocialEngine	
+*GrowpleDb 		-> note: copy exisiting db class + custom for our specific queries
+
+****************************************
+
+-------------
+Visitor
+-------------
+
+
+*id 
+*name
+*hasCheered
+*status (for challenger:[created challenge, sent request], challengee:[accepted challenge], visitor:[cheered, commented])
+
+
+-getID/setID 		-- retrieve/set ID of user
+-getName/setName 	-- retrieve/set name
+-addCheer			-- add a vote to a player 
+-getState			-- get the visitors state (for challenger:[created challenge, sent request], 
+											  challengee:[accepted challenge], visitor:[cheered, 
+											  commented])
+-----------------
+Visitor -> Player
+-----------------
+
+
+*type (challenger/challengee)
+*wlrecord
+*friendlist
+*profilePic
+
+
+-getCheers 		 		-- retrieve number of votes
+-getType/setType 		-- retrieve/set type of user
+-getWinLossRecord		-- retrieve wins and losses
+-addWin					-- add a win 
+-addLoss				-- add a loss
+-setFriendList			-- (private) cannot be accessed by the client, query the engine, get the list
+-getFriendLIst			-- retrieves list of friends
+-setProfilePic			-- (private) query the engine for user's profile pic
+-getProfilePic			--  retrieves profile pic
+
+
+
+----------------------------------
+Challenge 
+	--> Player -> type: challenger
+	--> Player -> type: challengee
+	--> Notice 
+----------------------------------
+
+
+*id
+*totalCheers (private?)
+*challenger -> Player object
+*challengee -> Player object
+*result -> array [winner -> '34343, loser -> '3434']
+*category
+*name
+*status -> (active, pending, completed)
+*notice -> Notice object 
+*PlayerStopTime
+*ServerStopTime (private)
+
+
+
+-get/set challenger & challengee					-- get/set challenger & challengee
+-getResult/setResult								-- get/set the winner & loser
+-getCategory/setCategory							-- get/set categories
+-getName/setName									-- get/set name
+-getPlayerStopTime/setPlayerStopTime				-- get/set player stop time (player's timezone)
+-getServerStopTime/setServerStopTime(private)		-- get/set server stop time (server's timezone (EST)		
+-getStatus/setStatus								-- get/set server status
+-convertToTimezone									-- convert challenger's timezone
+-getTotalCheers										-- returns total 
+-addCheer											-- add cheer to challenge -> goes to total cheer 
+
+
+----------------------------------
+ Notice
+----------------------------------
+
+*message
+*type  -> (notification, post)
+*challenge -> challenge object
+*sender   -> Visitor object  (challenger, challengee, visitor)
+*receiver -> Visitor objet (challenger, challengee, visitor)
+*pics
+
+
+-get/setType 			-- get/set type of notice
+-get/setMessage			-- get/set message
+-get/setSender			-- get/set sender object (mandatory)
+-get/setReceiver		-- get/set receiver object (optional)
+-get/setPic				-- get/set pictures (optional)
+-sendNotice				-- sends a notice on behalf of the challenge
+-buildNotice 			-- constructs a notice depending on the type
+
+
+----------------------------------
+ SocialEngine
+----------------------------------
+
+
+*(dynamic)type -> (facebook, twitter, google+)
+*(dynamic)apiID
+
+
+-connect		-- connects with a social engine
+-getData		-- sends request to the API and returns data
+-buildRequest	-- constructs request variable
+
+

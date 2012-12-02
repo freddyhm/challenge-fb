@@ -1,0 +1,1272 @@
+/* Author: Freddy Hidalgo-Monchez & Ashish Bidadi */
+
+/*------------------------ Common Elements ------------------------*/
+
+#main{
+
+	width:1021px;
+	height:601px;
+}
+
+
+#header{
+
+	background-image: url('../img/bg_fbheader.png');
+	background-repeat: repeat-x;
+	height:200px;
+	margin: 0px -8px 0px 0px;
+}
+
+#game_view{
+
+	background-image: url('../img/bg_main.png');
+	background-repeat:repeat-x;
+	margin-top:-38px;
+	padding-top:15px;
+}
+
+/*------------------------ header ------------------------*/
+#header *{
+
+	position: relative;
+}
+
+.display_center_img{
+
+	display: block;
+	margin-left:auto; 
+	margin-right:auto; 
+}
+
+#h_tool_tip {
+
+    bottom: 12px;
+   
+}
+
+#h_btn_startchallenge{
+
+	bottom: 66px;
+    right: 265px;
+}
+
+#h_btn_invite {
+
+    bottom: 111px;
+    right: 111px;
+}
+
+#h_btn_visit {
+
+    bottom: 157px;
+    left: 27px;
+}
+
+
+#mediaFbLike{
+
+	bottom: 193px;
+	left: 329px;
+    /* margin: -214px 0 0 732px; */
+}
+
+#mediaTwitter{
+
+	bottom: 214px;
+	left: 277px;
+	width:113px;
+
+}
+
+/*------------------------ end of header ------------------------*/
+
+
+/*------------------------ Screen 1: Start View ------------------------*/
+#startview{
+
+	background-image: url('../img/1_start/bg_start_main.png');
+	height:602px;
+	margin-top:-38px;
+	color: #666666;
+	font-size:18px;
+	font-family: Helvetica;
+}
+
+#s_bg_getstarted{
+	margin-top:-38px;
+}
+
+#s_player1{
+
+	position: absolute;
+ 	margin: -370px 0 0 228px;
+}
+
+#s_player2{
+
+	position: absolute;
+ 	margin: -370px 0 0 504px;
+}
+
+.s_btn_go{
+	display: none;
+}
+
+#s_btn_go_left{
+
+	position: absolute;
+	margin: -198px 0 0 317px;
+
+}
+
+#s_btn_left_caption{
+
+	position: absolute;
+	margin: -325px 0 0 267px;
+	display:none;
+}
+
+#s_btn_go_right{
+
+	position: absolute;
+	margin: -198px 0 0 601px;
+}
+
+#s_btn_right_caption{
+
+	position: absolute;
+	margin: -325px 0 0 549px;
+	display: none;
+}
+/*------------------------ End Start View ------------------------* /
+
+/*------------------------ Screen 2: Pick Challenge View ------------------------*/
+
+#pc_container{
+
+	background-image: url('../img/2_pickchallenge/bg_main_container.png');
+	background-repeat: repeat-x;
+	height:586px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	color: #cccccc;
+	font-size:18px;
+	font-family: Helvetica;
+}
+
+#pc_categories{
+
+	width:730px;
+	text-align:center;
+	padding: 90px 0px 0px 14px;
+}
+
+#pc_content{
+
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#pc_or{
+
+	width:25px;
+	text-align:center;
+}
+
+#pickch_btn_category1{
+
+	margin: -10px 0 0 0;
+}	
+
+#pickch_btn_category2{
+
+	margin: -10px 0 0 -10px;
+}
+
+#pickch_btn_category3{
+
+	margin: -10px 0 0 -7px;
+}
+
+#pickch_searchbar{
+
+	background: url('../img/2_pickchallenge/searchbar.png');
+	background-repeat: no-repeat;
+	height: 98px;
+	width: 363px;
+	padding: 0 0 17px 0;
+}
+
+#pickch_text{
+
+	height: 25px;
+	width: 246px;
+	border: 0px;
+	font-size:20px;
+	margin-top: 37px;
+	margin-left: 37px;
+	background: transparent;
+}
+
+#btn_go_green{
+
+	margin:0 -9px -14px 0;
+	visibility: hidden;
+}
+
+#pickch_btn_go{
+
+	margin: 0 -300px -330px -424px;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide .inner{
+
+	position: absolute;
+	left:0;
+	top: 0;
+}
+
+#pc_category_list{
+
+	width:689px;
+	height:243px;
+}
+#list_1{
+	width:689px;
+	height:243px;
+}
+
+
+#inner{
+
+	width:689px;
+	height:243px;
+
+	margin: -10px 0 0 11px;
+	display: none;
+}
+
+#inner_challenges{
+
+	width:675px;
+	height:160px;
+	
+	margin: -175px 0 0 18px;
+	display: none;
+}
+
+#challenge_item{
+
+	height:38px;
+	background-image:url('../img/2_pickchallenge/categorymenu/bg_challenge.png');
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-top:10px;
+	padding-left:10px;
+	margin-bottom:-7px;
+	font-size:18px;
+	color:#333333;
+	font-style: Arial;
+	display: none;
+}
+
+
+#inner_2{
+
+	width:689px;
+	height:243px;
+	margin: -10px 0 0 5px;
+	display:none;
+}
+
+#inner_2_challenges{
+
+	width:675px;
+	height:160px;
+
+	margin: -175px 0 0 12px;
+	display: none;
+}
+
+#challenge_item_21{
+
+	height:38px;
+	background-image:url('../img/2_pickchallenge/categorymenu/bg_challenge.png');
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-top:10px;
+	padding-left:10px;
+	margin-bottom:-7px;
+	font-size:18px;
+	color:#333333;
+	font-style: Arial;
+	display: none;
+}
+
+
+#inner_3{
+
+	width:689px;
+	height:243px;
+	margin: -10px 0 0 4px;
+	display: none;
+}
+
+#inner_3_challenges{
+
+	width:675px;
+	height:160px;
+
+	margin: -175px 0 0 11px;
+	display: none;
+}
+
+#challenge_item_31{
+
+	height:38px;
+	background-image:url('../img/2_pickchallenge/categorymenu/bg_challenge.png');
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-top:10px;
+	padding-left:10px;
+	margin-bottom:-7px;
+	font-size:18px;
+	color:#333333;
+	font-style: Arial;
+	display: none;
+}
+
+#inner_4{
+
+	width:689px;
+	height:243px;
+	margin: -10px 0 0 4px;
+	display:none;
+}
+
+#inner_4_challenges{
+
+	width:675px;
+	height:160px;
+
+	margin: -175px 0 0 11px;
+	display: none;
+}
+
+#challenge_item_41{
+
+	height:38px;
+	background-image:url('../img/2_pickchallenge/categorymenu/bg_challenge.png');
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-top:10px;
+	padding-left:10px;
+	margin-bottom:-7px;
+	font-size:18px;
+	color:#333333;
+	font-style: Arial;
+	display: none;
+}
+
+#go_back_img{
+
+	margin: 30px 0 0 40px;
+}
+
+/*------------------------ End Pick Challenge View ------------------------*/
+
+/*------------------------ Screen 3: Pick a Friend View ------------------------*/
+#pf_container{
+
+	background-image: url('../img/3_pickfriend/bg_main_container.png');
+	background-repeat: no-repeat;
+	height:567px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:49px;
+}
+
+#pf_container_invite{		/* For the invite module, change in banner */
+
+	background-image: url('../img/6_challengepage/invite_module_container.png');
+	background-repeat: no-repeat;
+	height:567px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:49px;
+	margin-top:20px;
+}
+
+#pf_text_search{
+
+	background: url('../img/3_pickfriend/bg_search.png');
+	background-repeat: no-repeat;
+	height: 97px;
+	width: 363px;
+/*	padding:45px 0 0 0;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#pf_text_search_box{
+
+	height: 25px;
+	width: 265px;
+	border: 0px;
+	font-size:20px;
+	margin-top: 35px;
+	margin-left: 70px;
+	background: transparent;
+}
+
+#pf_friends_list{
+
+	background-image: url('../img/3_pickfriend/bg_friendlist.png');
+	background-repeat: no-repeat;
+	height:339px;
+	width:659px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-14px;
+	padding-top:15px;
+}
+
+#pf_friends_table{
+
+	height:309px;
+	width:632px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:3px;
+	overflow-y: visible;
+	overflow-x: hidden;
+
+}
+
+table.friends_table td{
+
+	padding-right:15px;
+}
+
+#pf_load_more{
+
+	height:49px;
+	width:689px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:322px;
+}
+
+#pf_btn_go{
+
+	width:92px;
+	height:95px;
+	margin:-67px 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+#go_back_img_pf{
+
+	margin: 17px 0 0 40px;
+}
+
+/*------------------------ End Pick a Friend View ------------------------*/
+
+/*------------------------ Screen 4: Send Challenge Request ------------------------*/
+#sc_container{
+
+	background-image: url('../img/4_1_sendchallengerequest/bg_main_container.png');
+	background-repeat: no-repeat;
+	height:522px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:76px;
+	font-size:15px;
+	font-family:Trebuchet MS,Helvetica,Arial,Verdana,sans-serif;
+}
+
+#sc_challenge_info{
+
+	background-image: url('../img/4_1_sendchallengerequest/bg_challengetitle.png');
+	background-repeat: no-repeat;
+	width:635px;
+	height:81px;
+	padding:25px 0 0 25px;
+	margin-bottom:-25px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#sc_challenge_members{
+	
+	margin: -2px 0 0 0;
+	color: #0c609b;
+	font-weight:bold;
+}
+
+#sc_challenge_members_other{
+		
+	margin: 7px 7px 0 0;
+	color: #0c609b;
+	font-weight:bold;
+}
+
+#sc_challenge_name{
+
+	margin: 1px 0 0 0;
+	color: #404040;
+	font-weight:bold
+}
+
+#sc_challenge_info_bg{
+
+}
+
+#sc_challenge{
+
+	background-image: url('../img/4_1_sendchallengerequest/bg_paper.png');
+	background-repeat: no-repeat;
+	width:660px;
+	height:316px;
+	padding: 10px 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#sc_challenge_banner{
+
+	background-image: url('../img/4_1_sendchallengerequest/banner_vs.png');
+	background-repeat: no-repeat;
+	width:646px;
+	height:172px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#sc_player_1_picture_sc{
+
+	float:right; 
+	height:106px; 
+	width:106px; 
+	border-top:5px solid #3399FF;
+	border-right:5px solid #3399FF;
+	border-left:5px solid #3399FF; 
+}
+
+#sc_player_2_picture_sc{
+
+	height:106px; 
+	width:106px; 
+	border-top:5px solid #66CC00;
+	border-right:5px solid #66CC00;
+	border-left:5px solid #66CC00;
+}
+
+#sc_player_1_name_sc{
+
+	float:right; 
+	padding-top: 0px;
+	height:58px; 
+	width:220px;
+	color:#FFFFFF;
+	font-size:18px
+}
+
+#sc_player_2_name_sc{
+
+	padding-top: 0px;
+	height:58px; 
+	width:220px;
+	color:#FFFFFF;
+	font-size:18px
+}
+
+#sc_time_period{
+
+	width:590px;
+	height:20px;
+	margin:0 0 0 40px;
+	padding:7px 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:13px;
+	color: #7A7A7A;
+	text-align:center;	
+}
+
+#time_table{
+	
+	margin-top:-2px;
+}
+
+#time_period_dd{
+	margin: -9px 0 0 292px;
+}
+
+#time_message{
+	
+	background-image: url('../img/4_1_sendchallengerequest/bg_tooltip2.png');
+	background-repeat: no-repeat;
+	width: 220px;
+	height: 50px;
+	margin: 0 0 0 3px;
+	padding: 5px 11px 0 15px;
+	font-size:11px; 
+	color:#40531B;
+}
+
+#sc_current_time{
+
+	 margin:3px 0 0 35px;
+	 font-size:13px;
+	 color: #7A7A7A;
+	 text-align:center;
+}
+
+
+.sc_tool_tip{
+
+	margin: 3px 32px 0px 0px;
+	float:right;
+	display:none;
+}
+
+#send_button{
+
+	margin: -60px 0 0 329px;
+}
+
+#accept_button{
+
+	margin: 78px 0 0 368px;
+	position:absolute;
+}
+
+#sc_btn_go_send{
+
+
+}
+
+#sc_btn_go_accept{
+
+}
+
+#sc_btn_go_decline{
+
+	margin: 77px 0 0 216px;
+}
+
+#notify_message{
+	font-size:12px; 
+	color:#CCCCCC; 
+	width:240px; 
+	margin: -60px 0 0 103px;
+}
+
+/*------------------------ End Send Challenge Request ------------------------*/
+
+/*------------------------ Screen 5: Getting Started/ Challenge Tips Page ------------------------*/
+
+#game_view_GS{
+
+	/*Wrapper*/
+
+	background-image: url('../img/bg_main.png');
+	background-repeat: no-repeat;
+	/*height:601px;
+	width:1021px;
+	margin-top:-38px;
+	padding-top:15px;*/
+
+	width:100%;
+    height:100%;
+    position:absolute;
+    top:0;left:0;
+    overflow:hidden;
+}
+
+#gs_container_GS{
+
+	background-image: url('../img/5_gettingstarted/bg_main_container.png');
+	background-repeat: no-repeat;
+	width:300%;
+    height:100%;
+}
+
+.item{
+	width:33%;
+    height:100%;
+    float:left;
+}
+
+.content {
+    width:400px;
+    height:300px;
+    top:20%;
+    margin:0 auto;
+    position:relative;
+}
+
+    .selected {
+        background:#fff;
+        font-weight:700;
+    }
+ 
+    .clear {
+        clear:both;
+    }
+
+#gs_step1_icon{
+
+	height:240px;
+	width:240px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.gs_tip1_hover{
+	display: none;
+}
+
+#gs_tip1_like{
+
+	height:240px;
+	width:240px;
+	margin: 0 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#gs_step2_icon{
+
+	height:240px;
+	width:240px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.gs_tip2_hover{
+	display: none;
+}
+
+#gs_tip2_like{
+
+	height:240px;
+	width:240px;
+	margin: 0 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#gs_step3_icon{
+
+	height:240px;
+	width:240px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.gs_tip3_hover{
+	display: none;
+}
+
+#gs_tip3_like{
+
+	height:240px;
+	width:240px;
+	margin: 0 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+/*------------------------ End Getting Started/ Challenge Tips Page ------------------------*/
+
+/*------------------------ Screen 6: Challenge Page ------------------------*/
+#cp_container{
+
+	background-image: url('../img/6_challengepage/bg_main_container.png');
+	background-repeat: no-repeat;
+	height:522px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:76px;
+
+	font-size:18px;
+	font-family:Trebuchet MS,Helvetica,Arial,Verdana,sans-serif;
+}
+
+#bg_showcase_view{
+
+	background-image: url('../img/6_challengepage/bg_showcase.png');
+	background-repeat: no-repeat;
+	width:716px;
+	height:175px;
+	margin-top: -125px;
+	padding-top: 15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#bg_challengeview{
+
+	background-image: url('../img/6_challengepage/bg_challengeview.png');
+	background-repeat: no-repeat;
+	width:300px;
+	height:64px;
+	margin:60px 0 0 217px;
+}
+
+/* facebook widget */
+
+.fb_iframe_widget {
+    padding-left:10px;
+    margin:1px 0px 0px 2px;
+}
+
+#bg_comment_view{
+
+	background-image: url('../img/6_challengepage/bg_commentview.png');
+	background-repeat: no-repeat;
+	width:716px;
+	height:102px;
+	margin-top: -2px;
+	margin-left:9px;
+	margin-right:auto;
+	padding: 15px 10px 10px 10px;
+	text-align:center;
+	overflow: auto;
+	font-size:15px;
+	color:#343434;
+}
+
+#player1_points{
+
+	height:30px;
+	width:46px;
+	margin:0 0 0 42px;
+}
+
+#player2_points{
+
+	height:30px;
+	width:46px;
+	margin:0 0 0 42px;
+}
+
+#playerLeft{
+	height:175px;
+	width:134px;
+	margin: -81px 0 0 100px;
+}
+
+#playerRight{
+	height:175px;
+	width:134px;
+	margin: -175px 0 0 485px;
+}
+#btn_cheerleft{
+
+	margin: -32px 0 0 -3px;
+}
+
+#btn_cheerright{
+
+	margin: -32.5px 0 0 -3px;
+}
+
+.ajax_loader{
+
+	position: absolute;
+	display: none;
+}
+
+#btn_cheerleft_ajax{
+	position: absolute;
+	margin: 41px 0 0 -44px;
+}
+
+#btn_cheerright_ajax{
+	position: absolute;
+	margin: 41px 0 0 48px;
+}
+
+
+#bg_invitefriends{
+
+	background-image: url('../img/6_challengepage/btn_invitefriends.png');
+	background-repeat: no-repeat;
+	width:299px;
+	height:40px;
+	margin-top: 15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#btn_create_challenge{
+
+	margin: 65px 0px 0px 208px;
+}
+
+#btn_invite_friends{
+
+	margin: 22px 0px 0px 208px;
+}
+
+#player1_pic{
+
+	background-image: url('../img/6_challengepage/bg_player1.png');
+	background-repeat: no-repeat;
+	width:134px;
+	height:134px;
+	margin:0 0 0 10px;
+}
+
+#player2_pic{
+
+	background-image: url('../img/6_challengepage/bg_player2.png');
+	background-repeat: no-repeat;
+	width:134px;
+	height:134px;
+	margin:-133px 0 0 572px;
+}
+
+#invite{
+	margin: 10px 0px 0px 208px;
+	position:absolute;
+}
+
+.pic{
+
+	width:121px;
+	height:121px;
+	margin:7px 0 0 6px;
+
+}
+
+#bg_challenge{
+
+	margin: -225px 0 40px;
+	font-family: "Trebuchet MS","Helvetica","Arial","Verdana","sans-serif";
+	font-size: 70.5%;
+	font-weight:bold;
+}
+
+.cheer_count{
+	position:absolute;
+	font-size:27px;
+	margin-top:-16px;
+	margin-left:-17px;
+	text-align:center;
+	top:339px;
+}
+
+#cheer_1_count{
+	
+	left:318px;
+	right:824px;
+	height:22px;	
+	width:39px;
+}
+
+#cheer_2_count{
+	left:822px;
+	right:417px;
+	height:22px;
+	width:39px;
+}
+
+/*------------------------ End Challenge Page ------------------------*/
+
+/*------------------------ Screen 7: Pick Winner ------------------------*/
+
+#r_container{
+
+	background-image: url('../img/7_result/bg_main_container.png');
+	background-repeat: no-repeat;
+	height:522px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:76px;
+}
+
+#r_challenge_info{
+
+	background-image: url('../img/7_result/bg_challengetitle.png');
+	background-repeat: no-repeat;
+	width:635px;
+	height:81px;
+	padding:25px 0 0 25px;
+	margin-bottom:-25px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.title{
+
+	color:#0c609b;
+}
+
+.message{
+
+	color:#404040;
+
+}
+
+#r_challenge_info_bg{
+
+}
+
+#r_challenge{
+
+	background-image: url('../img/7_result/bg_paper.png');
+	background-repeat: no-repeat;
+	width:660px;
+	height:316px;
+	padding: 10px 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#r_challenge_banner{
+
+	background-image: url('../img/4_1_sendchallengerequest/banner_vs.png');
+	background-repeat: no-repeat;
+	width:646px;
+	height:172px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.winner_tag, .outcome_tag{
+
+	position: absolute;
+	display: none;
+}
+
+#r_winner_tag{
+
+     margin: 20px 0 0 528px;
+}
+
+#l_winner_tag{
+
+	margin: 20px 0 0 33px;
+}
+
+#l_win_tag{
+
+     margin: 0px 0 0 33px;
+}
+
+#l_lose_tag{
+
+	margin: 30px 0 0 575px;
+}
+
+
+#r_player_1_picture{
+
+	float:right; 
+	height:106px; 
+	width:140px; 
+	border-top:5px solid #3399FF;
+	border-right:5px solid #3399FF;
+	border-left:5px solid #3399FF; 
+}
+
+#r_player_2_picture{
+
+	height:106px; 
+	width:140px; 
+	border-top:5px solid #66CC00;
+	border-right:5px solid #66CC00;
+	border-left:5px solid #66CC00;
+}
+
+#r_player_1_name{
+
+	float:right; 
+	padding-top: 15px;
+	height:50px; 
+	width:140px;
+}
+
+#r_player_2_name{
+
+	padding-top: 15px;
+	height:50px; 
+	width:140px;
+}
+
+#r_controls{
+
+}
+
+#r_left_select{
+
+	margin: 22px 0 0 60px;
+}
+
+#r_draw{
+
+	margin: 0 0 18px 35px;
+}
+
+#r_right_select{
+
+	margin: 0 0 0 31px;
+}
+
+#r_btn_go{
+
+	width:92px;
+	height:95px;
+	margin:-16px 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#r_win_select{
+	width:104px;
+	height:30px;	
+	margin: 44px 0 0 157px;
+}
+
+#r_lose_select{
+	width:104px;
+	height:30px;	
+	margin: 0 0 0 142px;
+}
+
+/*------------------------ End Pick Winner ------------------------*/
+
+/*------------------------ Screen 8: Result Page ------------------------*/
+
+#f_container{
+
+	background-image: url('../img/8_finish/bg_main_container.png');
+	background-repeat: no-repeat;
+	height:522px;
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:76px;
+}
+
+#f_challenge_info{
+
+	background-image: url('../img/8_finish/bg_challengetitle.png');
+	background-repeat: no-repeat;
+	width:635px;
+	height:81px;
+	padding:25px 0 0 25px;
+	margin-bottom:-25px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:15px;
+}
+
+
+
+#f_challenge{
+
+	background-image: url('../img/8_finish/bg_paper.png');
+	background-repeat: no-repeat;
+	width:660px;
+	height:316px;
+	padding: 1px 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#f_player_1_picture{
+
+	height:240px; 
+	width:240px; 
+	border-top:5px solid #3399FF;
+	border-right:5px solid #3399FF;
+	border-left:5px solid #3399FF; 
+	border-bottom:5px solid #3399FF; 
+	margin:0px 0 0 39px;
+}
+
+#f_player_2_picture{
+
+	height:75px; 
+	width:75px; 
+	border-top:5px solid #66CC00;
+	border-right:5px solid #66CC00;
+	border-left:5px solid #66CC00;
+	border-bottom:5px solid #66CC00; 
+	margin:-70px 0 0 255px;
+	position: absolute;
+}
+
+#f_share{
+
+	margin: 139px 0 0 431px
+}
+
+#f_share_msg{
+
+	position:absolute;
+	color:#0c609b;
+	font-size:26px;
+	margin: -75px 0 0 -54px;
+}
+
+
+#f_showcase{
+
+	width: 290px;
+	margin-top: -142px;
+}
+
+#f_controls{
+
+	width:680px;
+	height: 30px;
+	margin: 10px 0 0 56px;
+}
+
+#f_create{
+
+}
+
+#f_fbpage{
+
+	margin-left:10px;
+}
+
+#f_invite{
+
+	margin-left:10px;
+}
+
+#f_winner_tag{
+
+	position:absolute;
+	margin: 25px 0 0 -6px;
+}
+/*------------------------ End Result Page ------------------------*/
