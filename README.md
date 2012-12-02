@@ -9,7 +9,7 @@ Tools
 ======
 
 - ORM: PHP ActiveRecord
-- - DB: MySQL
+- DB: MySQL
 - Framework: Grobo 1.0
 - Back-End: PHP 5.3
 - Front-End: jQuery 1.8 / HTML5
